@@ -7,7 +7,7 @@ RUN docker-php-ext-install mbstring
 RUN docker-php-ext-install zip
 RUN docker-php-ext-install soap
 RUN pecl install xdebug
-RUN pecl install mongodb
+RUN echo '' | pecl install mongo
 RUN wget http://repo1.maven.org/maven2/org/codehaus/sonar/runner/sonar-runner-dist/2.4/sonar-runner-dist-2.4.zip
 RUN unzip sonar-runner-dist-2.4.zip
 RUN rm sonar-runner-dist-2.4.zip
