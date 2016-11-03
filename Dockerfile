@@ -1,7 +1,7 @@
 FROM php:5.6
 
 RUN apt-get update -yqq \
-    && apt-get install git openjdk-8-jre wget unzip zlibc zlib1g zlib1g-dev libxml2-dev libssl-dev mongodb-server -yqq
+    && apt-get install git openjdk-7-jre wget unzip zlibc zlib1g zlib1g-dev libxml2-dev libssl-dev mongodb-server -yqq
 RUN docker-php-ext-install pdo_mysql \
     && docker-php-ext-install mbstring \
     && docker-php-ext-install zip \
