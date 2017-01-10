@@ -9,9 +9,6 @@ RUN docker-php-ext-install pdo_mysql \
     && docker-php-ext-install opcache
 RUN pecl install xdebug \
     && echo '' | pecl install mongo
-RUN wget http://repo1.maven.org/maven2/org/codehaus/sonar/runner/sonar-runner-dist/2.4/sonar-runner-dist-2.4.zip \
-    && unzip sonar-runner-dist-2.4.zip \
-    && rm sonar-runner-dist-2.4.zip
-RUN wget https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-2.5.zip \
-    && unzip sonar-scanner-2.5.zip \
-    && rm sonar-scanner-2.5.zip
+RUN wget https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-2.8.zip \
+    && unzip sonar-scanner-2.8.zip \
+    && rm sonar-scanner-2.8.zip
